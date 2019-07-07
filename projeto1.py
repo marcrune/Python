@@ -42,7 +42,4 @@ new = np.array(new)
 dataframe = pd.DataFrame(data=new[0:, 0:],
                          columns=['Código', 'Últ.(R$)', 'Var. Dia(%)', 'Vol.(R$)', 'Neg.(Nº)', 'Hora'])
 
-for num in range(1, len(new) + 1):
-    dataframe = dataframe.rename(index=int, num)
-
 print(dataframe)
