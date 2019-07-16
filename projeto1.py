@@ -40,6 +40,7 @@ for dt in new_list:
 new = np.array(new)
 
 dataframe = pd.DataFrame(data=new[0:, 0:],
+                         index=[1, 2, 3, 4, 5],
                          columns=['Código', 'Últ.(R$)', 'Var. Dia(%)', 'Vol.(R$)', 'Neg.(Nº)', 'Hora'])
 
 print(dataframe)
