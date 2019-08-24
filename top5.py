@@ -39,8 +39,15 @@ for dt in new_list:
 
 new = np.array(new)
 
+ix = []
+ix_var = 0
+
+for item in new:
+    ix_var += 1
+    ix.append(ix_var)
+    
 dataframe = pd.DataFrame(data=new[0:, 0:],
-                         index=[1, 2, 3, 4, 5],
+                         index=ix,
                          columns=['Código', 'Últ.(R$)', 'Var. Dia(%)', 'Vol.(R$)', 'Neg.(Nº)', 'Hora'])
 
 print(dataframe)
