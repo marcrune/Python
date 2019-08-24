@@ -46,7 +46,7 @@ for item in new:
     ix_var += 1
     ix.append(ix_var)
     
-dataframe = pd.DataFrame(data=new[0:, 0:],
+dataframe = pd.DataFrame(data=new[:, :],
                          index=ix,
                          columns=['Código', 'Últ.(R$)', 'Var. Dia(%)', 'Vol.(R$)', 'Neg.(Nº)', 'Hora'])
 
